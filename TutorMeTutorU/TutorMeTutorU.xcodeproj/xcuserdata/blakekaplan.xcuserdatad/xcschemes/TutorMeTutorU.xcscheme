@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "76F18DC41BEE8C6F00EE1577"
-               BuildableName = "TutorMatch.app"
-               BlueprintName = "TutorMatch"
-               ReferencedContainer = "container:TutorMatch.xcodeproj">
+               BlueprintIdentifier = "76B0637E1BEEA04700CBDC16"
+               BuildableName = "TutorMeTutorU.app"
+               BlueprintName = "TutorMeTutorU"
+               ReferencedContainer = "container:TutorMeTutorU.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "76F18DD81BEE8C6F00EE1577"
-               BuildableName = "TutorMatchTests.xctest"
-               BlueprintName = "TutorMatchTests"
-               ReferencedContainer = "container:TutorMatch.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "76F18DE31BEE8C6F00EE1577"
-               BuildableName = "TutorMatchUITests.xctest"
-               BlueprintName = "TutorMatchUITests"
-               ReferencedContainer = "container:TutorMatch.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "76F18DC41BEE8C6F00EE1577"
-            BuildableName = "TutorMatch.app"
-            BlueprintName = "TutorMatch"
-            ReferencedContainer = "container:TutorMatch.xcodeproj">
+            BlueprintIdentifier = "76B0637E1BEEA04700CBDC16"
+            BuildableName = "TutorMeTutorU.app"
+            BlueprintName = "TutorMeTutorU"
+            ReferencedContainer = "container:TutorMeTutorU.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "76F18DC41BEE8C6F00EE1577"
-            BuildableName = "TutorMatch.app"
-            BlueprintName = "TutorMatch"
-            ReferencedContainer = "container:TutorMatch.xcodeproj">
+            BlueprintIdentifier = "76B0637E1BEEA04700CBDC16"
+            BuildableName = "TutorMeTutorU.app"
+            BlueprintName = "TutorMeTutorU"
+            ReferencedContainer = "container:TutorMeTutorU.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "76F18DC41BEE8C6F00EE1577"
-            BuildableName = "TutorMatch.app"
-            BlueprintName = "TutorMatch"
-            ReferencedContainer = "container:TutorMatch.xcodeproj">
+            BlueprintIdentifier = "76B0637E1BEEA04700CBDC16"
+            BuildableName = "TutorMeTutorU.app"
+            BlueprintName = "TutorMeTutorU"
+            ReferencedContainer = "container:TutorMeTutorU.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
