@@ -125,7 +125,6 @@
 				TargetAttributes = {
 					76B0637E1BEEA04700CBDC16 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 6D929ADT23;
 					};
 				};
 			};
@@ -326,7 +325,9 @@
 			baseConfigurationReference = 1760AF89F9142CFB18F390CE /* Pods-TutorMeTutorU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TutorMeTutorU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blakekaplandev.TutorMeTutorU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,7 +340,9 @@
 			baseConfigurationReference = 391EED26B11D57AB9E9F3A7D /* Pods-TutorMeTutorU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TutorMeTutorU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blakekaplandev.TutorMeTutorU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
