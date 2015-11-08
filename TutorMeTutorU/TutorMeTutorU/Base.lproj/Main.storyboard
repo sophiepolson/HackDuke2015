@@ -25,7 +25,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LVN-Qc-o08"/>
-                                    <segue destination="4bz-aB-JZg" kind="show" identifier="Jeff" id="37a-8e-SuS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEX-cQ-2hm">
@@ -130,6 +129,7 @@
                         <outlet property="newUser" destination="uEX-cQ-2hm" id="MhH-Q4-sIS"/>
                         <outlet property="password" destination="nAj-pk-Rhh" id="i49-WE-2Jf"/>
                         <outlet property="username" destination="U3x-p8-n0j" id="7FH-xn-f6W"/>
+                        <segue destination="4bz-aB-JZg" kind="show" identifier="Jeff" id="9ok-ef-ww6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -145,6 +145,7 @@
                         <viewControllerLayoutGuide type="bottom" id="XfH-MX-kCx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="b2H-Ka-lIU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -177,8 +178,7 @@
                                         <exclude reference="ysy-pD-HBL"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="75.5" y="189" width="250" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="ysy-pD-HBL"/>
                                     </mask>
@@ -196,8 +196,7 @@
                                         <exclude reference="aga-u3-t3T"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="75.5" y="117" width="250" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="aga-u3-t3T"/>
                                     </mask>
@@ -215,8 +214,7 @@
                                         <exclude reference="d3e-6s-bqz"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="75.5" y="79" width="250" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="d3e-6s-bqz"/>
                                     </mask>
@@ -234,8 +232,7 @@
                                         <exclude reference="A8j-YG-ojf"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="75.5" y="227" width="250" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="A8j-YG-ojf"/>
                                     </mask>
@@ -244,9 +241,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3s-Wg-o1V">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Make New User"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="146" y="285" width="108" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="makeUser:" destination="Hgo-EA-YLg" eventType="touchUpInside" id="yKv-Ss-JwT"/>
                                 </connections>
@@ -263,8 +257,7 @@
                                         <exclude reference="TO1-jk-H04"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="75.5" y="155" width="250" height="30"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="TO1-jk-H04"/>
                                     </mask>
@@ -297,17 +290,17 @@
                                 <exclude reference="H1X-uU-6Jc"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="MDe-J3-fHT"/>
-                                <exclude reference="hlg-vc-6gq"/>
-                                <exclude reference="SNd-hz-VvW"/>
-                                <exclude reference="kZD-8c-soY"/>
-                                <exclude reference="1z9-jj-y0I"/>
-                                <exclude reference="atc-If-o2z"/>
                                 <exclude reference="5vd-kM-IUd"/>
                                 <exclude reference="paz-lc-6QU"/>
                                 <exclude reference="V3s-SB-0O4"/>
                                 <exclude reference="baM-YS-tE3"/>
                                 <exclude reference="rNE-Rn-mp3"/>
+                                <exclude reference="1z9-jj-y0I"/>
+                                <exclude reference="atc-If-o2z"/>
+                                <exclude reference="MDe-J3-fHT"/>
+                                <exclude reference="hlg-vc-6gq"/>
+                                <exclude reference="SNd-hz-VvW"/>
+                                <exclude reference="kZD-8c-soY"/>
                                 <exclude reference="Use-uA-prb"/>
                                 <exclude reference="xOH-pK-4Rd"/>
                             </mask>
@@ -322,17 +315,17 @@
                                 <include reference="H1X-uU-6Jc"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="MDe-J3-fHT"/>
-                                <include reference="hlg-vc-6gq"/>
-                                <include reference="SNd-hz-VvW"/>
-                                <include reference="kZD-8c-soY"/>
-                                <include reference="1z9-jj-y0I"/>
-                                <include reference="atc-If-o2z"/>
                                 <include reference="5vd-kM-IUd"/>
                                 <include reference="paz-lc-6QU"/>
                                 <include reference="V3s-SB-0O4"/>
                                 <include reference="baM-YS-tE3"/>
                                 <include reference="rNE-Rn-mp3"/>
+                                <include reference="1z9-jj-y0I"/>
+                                <include reference="atc-If-o2z"/>
+                                <include reference="MDe-J3-fHT"/>
+                                <include reference="hlg-vc-6gq"/>
+                                <include reference="SNd-hz-VvW"/>
+                                <include reference="kZD-8c-soY"/>
                                 <include reference="Use-uA-prb"/>
                                 <include reference="xOH-pK-4Rd"/>
                             </mask>

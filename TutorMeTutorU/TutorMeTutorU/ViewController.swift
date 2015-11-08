@@ -28,7 +28,9 @@ class ViewController: UIViewController {
                     self.presentViewController(alert, animated: true, completion: nil)
                     print("WRONG")
                 } else {
-                     print("YAY")
+                    print("YAY")
+                    self.myUid = self.myFirebase.authData.uid
+                    self.performSegueWithIdentifier("Jeff", sender: self)
                 }
         })}
     
@@ -58,16 +60,13 @@ class ViewController: UIViewController {
         
         // Dispose of any resources that can be recreated.
     }
-/*
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject){
-        if(segue.identifier == "Jeff"){
-            
-            let destinationVC:ViewControllerClass = segue.destinationViewController
-            
-            svc.toPass = myUid;
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "Jeff"){
+            var svc = segue.destinationViewController as! MainScreen;
+            svc.UID = myUid
         }
     }
-
-*/
+    
 }
 
