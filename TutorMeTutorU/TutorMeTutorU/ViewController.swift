@@ -9,24 +9,47 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var myLogin: UIButton!
+    @IBOutlet weak var newUser: UIButton!
+    
+    var myFirebase = Firebase(url:"https://tutormetutoru.firebaseio.com");
 
+    @IBAction func login(sender: AnyObject) {
+        myFirebase.authUser(username.text, password: password.text,
+            withCompletionBlock: { error, authData in
+                if error != nil {
+                    print("WRONG")
+                } else {
+                     print("YAY")
+                }
+        })}
+    
+    func addUsers(){
+        myFirebase.createUser("blakejkaplan@gmail.com", password: "password",
+            withValueCompletionBlock: { error, result in
+                if error != nil {
+                    print("It didn't work");
+                } else {
+                    let uid = result["uid"] as? String
+                    print("Successfully created user account with uid: \(uid)")
+                }
+        })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var ref = Firebase(url:"https://tutormetutoru.firebaseio.com")
+        addUsers()
         
-        var alanisawesome = ["full_name": "Alan Turing", "date_of_birth": "June 23, 1912"]
-        var gracehop = ["full_name": "Grace Hopper", "date_of_birth": "December 9, 1906"]
-        
-        var usersRef = ref.childByAppendingPath("users")
-        
-        var users = ["alanisawesome": alanisawesome, "gracehop": gracehop]
-        usersRef.setValue(users)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
 
