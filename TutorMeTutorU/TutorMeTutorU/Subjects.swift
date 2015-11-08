@@ -6,7 +6,7 @@
 //  Copyright © 2015 Blake Kaplan. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class Subjects: UITableViewController {
 
