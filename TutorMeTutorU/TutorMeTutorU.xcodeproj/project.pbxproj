@@ -13,6 +13,7 @@
 		76B063881BEEA04700CBDC16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B063861BEEA04700CBDC16 /* Main.storyboard */; };
 		76B0638A1BEEA04700CBDC16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B063891BEEA04700CBDC16 /* Assets.xcassets */; };
 		76B0638D1BEEA04700CBDC16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B0638B1BEEA04700CBDC16 /* LaunchScreen.storyboard */; };
+		76B1B87E1BEEE3E0000B6CD0 /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B1B87D1BEEE3E0000B6CD0 /* NewUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		76B063891BEEA04700CBDC16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76B0638C1BEEA04700CBDC16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76B0638E1BEEA04700CBDC16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B1B87D1BEEE3E0000B6CD0 /* NewUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewUser.swift; path = ../NewUser.swift; sourceTree = "<group>"; };
 		8D81D076AD62C1D096D45309 /* libPods-TutorMeTutorU.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TutorMeTutorU.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 		76B063811BEEA04700CBDC16 /* TutorMeTutorU */ = {
 			isa = PBXGroup;
 			children = (
+				76B1B87D1BEEE3E0000B6CD0 /* NewUser.swift */,
 				767FAA931BEEA52C00EFC3F4 /* Bridging-Header.h */,
 				76B063821BEEA04700CBDC16 /* AppDelegate.swift */,
 				76B063841BEEA04700CBDC16 /* ViewController.swift */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76B063851BEEA04700CBDC16 /* ViewController.swift in Sources */,
+				76B1B87E1BEEE3E0000B6CD0 /* NewUser.swift in Sources */,
 				76B063831BEEA04700CBDC16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

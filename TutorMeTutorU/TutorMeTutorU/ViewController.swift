@@ -27,6 +27,8 @@ class ViewController: UIViewController {
                 }
         })}
     
+   
+    
     func addUsers(){
         myFirebase.createUser("blakejkaplan@gmail.com", password: "password",
             withValueCompletionBlock: { error, result in
@@ -42,8 +44,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        addUsers()
         
     }
     
