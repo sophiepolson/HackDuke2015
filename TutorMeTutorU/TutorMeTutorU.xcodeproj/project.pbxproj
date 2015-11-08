@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		61BAC89B8150A2C9821B4180 /* libPods-TutorMeTutorU.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D81D076AD62C1D096D45309 /* libPods-TutorMeTutorU.a */; };
+		761561071BEF2C2C001DA6CE /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761561061BEF2C2C001DA6CE /* Subjects.swift */; };
+		761561091BEF2C5A001DA6CE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761561081BEF2C5A001DA6CE /* Profile.swift */; };
 		762A1AC71BEF00A6009215DB /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762A1AC61BEF00A6009215DB /* MainScreen.swift */; };
 		76B063831BEEA04700CBDC16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B063821BEEA04700CBDC16 /* AppDelegate.swift */; };
 		76B063851BEEA04700CBDC16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B063841BEEA04700CBDC16 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		1760AF89F9142CFB18F390CE /* Pods-TutorMeTutorU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorMeTutorU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TutorMeTutorU/Pods-TutorMeTutorU.debug.xcconfig"; sourceTree = "<group>"; };
 		391EED26B11D57AB9E9F3A7D /* Pods-TutorMeTutorU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorMeTutorU.release.xcconfig"; path = "Pods/Target Support Files/Pods-TutorMeTutorU/Pods-TutorMeTutorU.release.xcconfig"; sourceTree = "<group>"; };
+		761561061BEF2C2C001DA6CE /* Subjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
+		761561081BEF2C5A001DA6CE /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		762A1AC61BEF00A6009215DB /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		767FAA931BEEA52C00EFC3F4 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../Bridging-Header.h"; sourceTree = "<group>"; };
 		76B0637F1BEEA04700CBDC16 /* TutorMeTutorU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorMeTutorU.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +61,7 @@
 		76B063761BEEA04700CBDC16 = {
 			isa = PBXGroup;
 			children = (
+				761561081BEF2C5A001DA6CE /* Profile.swift */,
 				76B063811BEEA04700CBDC16 /* TutorMeTutorU */,
 				76B063801BEEA04700CBDC16 /* Products */,
 				17D7B19156DD8343436254B8 /* Pods */,
@@ -84,6 +89,7 @@
 				76B063891BEEA04700CBDC16 /* Assets.xcassets */,
 				76B0638B1BEEA04700CBDC16 /* LaunchScreen.storyboard */,
 				76B0638E1BEEA04700CBDC16 /* Info.plist */,
+				761561061BEF2C2C001DA6CE /* Subjects.swift */,
 			);
 			path = TutorMeTutorU;
 			sourceTree = "<group>";
@@ -219,9 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				762A1AC71BEF00A6009215DB /* MainScreen.swift in Sources */,
+				761561091BEF2C5A001DA6CE /* Profile.swift in Sources */,
 				76B063851BEEA04700CBDC16 /* ViewController.swift in Sources */,
 				76B1B87E1BEEE3E0000B6CD0 /* NewUser.swift in Sources */,
 				76B063831BEEA04700CBDC16 /* AppDelegate.swift in Sources */,
+				761561071BEF2C2C001DA6CE /* Subjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

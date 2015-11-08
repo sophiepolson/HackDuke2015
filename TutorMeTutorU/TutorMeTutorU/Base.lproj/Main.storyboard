@@ -37,7 +37,7 @@
                                     <segue destination="Hgo-EA-YLg" kind="show" id="fhy-xm-Xku"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nAj-pk-Rhh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nAj-pk-Rhh">
                                 <rect key="frame" x="20" y="263" width="560" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="LGa-vd-o53"/>
@@ -57,7 +57,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U3x-p8-n0j">
+                            <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="blakejkaplan@gmail.com" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U3x-p8-n0j">
                                 <rect key="frame" x="20" y="209" width="560" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="LEd-kP-EAb"/>
@@ -147,12 +147,113 @@
                     <view key="view" contentMode="scaleToFill" id="b2H-Ka-lIU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MESSAGE WILL GO HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWK-4W-JDR">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="101" y="34" width="198" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kg5-rF-pxd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Find A Tutor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="158" y="233" width="84" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="KHJ-5P-biA" kind="showDetail" id="Uhl-UQ-gZJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dv-rb-KFB">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="My Profile"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="166" y="320" width="69" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eWK-4W-JDR" firstAttribute="top" secondItem="dgl-EN-7b7" secondAttribute="bottom" constant="35" id="OUJ-rk-SpY"/>
+                            <constraint firstItem="eWK-4W-JDR" firstAttribute="centerX" secondItem="b2H-Ka-lIU" secondAttribute="centerX" id="ciJ-6f-xRg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="eWK-4W-JDR"/>
+                                <exclude reference="kg5-rF-pxd"/>
+                                <exclude reference="1dv-rb-KFB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="OUJ-rk-SpY"/>
+                                <exclude reference="ciJ-6f-xRg"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="eWK-4W-JDR"/>
+                                <include reference="kg5-rF-pxd"/>
+                                <include reference="1dv-rb-KFB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="OUJ-rk-SpY"/>
+                                <include reference="ciJ-6f-xRg"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="welcomeMessage" destination="eWK-4W-JDR" id="lxp-rH-lUq"/>
+                        <segue destination="cpD-8A-hN2" kind="show" id="LXF-gY-HtA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHa-k3-1oz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1509" y="-368"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Cit-ma-QzJ">
+            <objects>
+                <viewController id="cpD-8A-hN2" customClass="Profile" customModule="TutorMeTutorU" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k7a-K8-kfg"/>
+                        <viewControllerLayoutGuide type="bottom" id="W0c-rD-UXo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jA6-XI-Rat">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7T-Xh-ZL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2316" y="-25"/>
+        </scene>
+        <!--Subjects-->
+        <scene sceneID="Abg-rd-MfJ">
+            <objects>
+                <tableViewController id="KHJ-5P-biA" customClass="Subjects" customModule="TutorMeTutorU" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="biw-Na-jJz">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dLC-ch-Iab">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dLC-ch-Iab" id="Vka-gF-ztj">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KHJ-5P-biA" id="r0Z-4m-iFk"/>
+                            <outlet property="delegate" destination="KHJ-5P-biA" id="8ff-Lb-Ll6"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ykK-96-mz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2305.5" y="-790"/>
         </scene>
         <!--New User-->
         <scene sceneID="orC-gw-rmq">
