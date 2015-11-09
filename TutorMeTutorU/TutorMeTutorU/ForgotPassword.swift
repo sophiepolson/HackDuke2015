@@ -17,7 +17,7 @@ class ForgotPassword: UIViewController {
     @IBAction func sendEmail(sender: AnyObject) {
         myFirebase.resetPasswordForUser(emailAddress.text, withCompletionBlock: { error in
             if error != nil {
-                var alert = UIAlertController(title: "Unknown email", message: "This email does not have an account. Please try again.", preferredStyle: UIAlertControllerStyle.Alert)
+                var alert = UIAlertController(title: "Unknown email", message: "This email is not associated with any account. Please try again.", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
                 print("NO")
