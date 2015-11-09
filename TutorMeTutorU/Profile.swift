@@ -66,6 +66,9 @@ class Profile: UIViewController {
         
         narrowBase.setValue(information)
         
+        var alert = UIAlertController(title: "Saved", message: "Your information has been saved.", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

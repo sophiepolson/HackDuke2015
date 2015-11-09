@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var myLogin: UIButton!
     @IBOutlet weak var newUser: UIButton!
+    @IBOutlet weak var forgotPassword: UIButton!
     
     var myUid : String!
     

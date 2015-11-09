@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1178A1CC1BF009BF009FC081 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1178A1CB1BF009BF009FC081 /* ForgotPassword.swift */; settings = {ASSET_TAGS = (); }; };
 		61BAC89B8150A2C9821B4180 /* libPods-TutorMeTutorU.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D81D076AD62C1D096D45309 /* libPods-TutorMeTutorU.a */; };
 		761561071BEF2C2C001DA6CE /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761561061BEF2C2C001DA6CE /* Subjects.swift */; };
 		761561091BEF2C5A001DA6CE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761561081BEF2C5A001DA6CE /* Profile.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1178A1CB1BF009BF009FC081 /* ForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		1760AF89F9142CFB18F390CE /* Pods-TutorMeTutorU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorMeTutorU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TutorMeTutorU/Pods-TutorMeTutorU.debug.xcconfig"; sourceTree = "<group>"; };
 		391EED26B11D57AB9E9F3A7D /* Pods-TutorMeTutorU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorMeTutorU.release.xcconfig"; path = "Pods/Target Support Files/Pods-TutorMeTutorU/Pods-TutorMeTutorU.release.xcconfig"; sourceTree = "<group>"; };
 		761561061BEF2C2C001DA6CE /* Subjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				76B0638B1BEEA04700CBDC16 /* LaunchScreen.storyboard */,
 				76B0638E1BEEA04700CBDC16 /* Info.plist */,
 				761561061BEF2C2C001DA6CE /* Subjects.swift */,
+				1178A1CB1BF009BF009FC081 /* ForgotPassword.swift */,
 			);
 			path = TutorMeTutorU;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				761561091BEF2C5A001DA6CE /* Profile.swift in Sources */,
 				76B063851BEEA04700CBDC16 /* ViewController.swift in Sources */,
 				76B1B87E1BEEE3E0000B6CD0 /* NewUser.swift in Sources */,
+				1178A1CC1BF009BF009FC081 /* ForgotPassword.swift in Sources */,
 				76B063831BEEA04700CBDC16 /* AppDelegate.swift in Sources */,
 				761561071BEF2C2C001DA6CE /* Subjects.swift in Sources */,
 			);
